@@ -1,0 +1,90 @@
+$base-color: steelblue;
+
+// Variable Overrides 
+$theme-colors: (
+  "primary": $base-color
+);
+
+$body-bg: steelblue;
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.jumbotron {
+    background-color: #ffffff !important;
+    border-top: 3px solid rgb(219, 219, 219);
+}
+
+.quote {
+    position: relative;
+    letter-spacing: .03em;
+    margin-bottom: .5rem;
+    
+    &:before {
+        content: "“";
+        position: absolute;
+        left: -.7em;
+    }
+    
+    &:after {
+        content: "”";
+        margin-right: -1rem;
+    }
+}
+
+.quote--container {
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 2px dotted #C6D1BF;
+    padding-bottom: .5rem;
+}
+
+.quote--highlight {
+    color: $base-color;
+    font-weight: bold;
+}
+
+.quote--author {
+    font-family: 'Open Sans Condensed';
+    font-size: .8rem;
+    text-align: right;
+    font-weight: 300;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ }
+
+ .row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  #pills-one{
+    background-color: steelblue;
+    color: white;
+  }
+  #pills-two{
+    background-color: white;
+    color: steelblue;
+  }
+  #pills-three{
+    background-color: white;
+    color: steelblue;
+  }
+  #sectionOne {
+    height: 100%; 
+    text-align: left; 
+  }
+  #sectionTwo {
+    height: 100%; 
+    display: none;
+    text-align: left; 
+  }
+  #sectionThree {
+    height: 100%; 
+    display: none;
+    text-align: left; 
+  }
