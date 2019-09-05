@@ -9,15 +9,50 @@ $body-bg: steelblue;
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
 
+//Google Fonts Imports
+@import url('https://fonts.googleapis.com/css?family=Blinker|Luckiest+Guy|Patua+One|Righteous|Open+Sans:600|Work+Sans:500|Ultra&display=swap');
+
 .jumbotron {
     background-color: #ffffff !important;
     border-top: 3px solid rgb(219, 219, 219);
+    animation-delay: -2s;
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+    transition-timing-function: cubic-bezier(0, 0.9, 1, 0.58);
+}
+
+#fbIcon{
+  width:50px;
+  animation: 1s ease-out 0s 1 rotateFullRight;
+  animation-delay: 1.5s;
+}
+#linkedInIcon{
+  width:60px;
+  animation: 1s ease-out 0s 1 rotateFullRight;
+  animation-delay: 1.7s;
+}
+#githubIcon{
+  width:55px;
+  animation: 1s ease-out 0s 1 rotateFullRight;
+  animation-delay: 1.9s;
+}
+
+#about{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.card-title{
+  font-family: 'Ultra', serif;
+}
+p, li{
+  font-family: 'Work Sans', sans-serif;
 }
 
 .quote {
     position: relative;
     letter-spacing: .03em;
     margin-bottom: .5rem;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+    transition-timing-function: cubic-bezier(0, 0.9, 1, 0.58);
     
     &:before {
         content: "“";
@@ -88,3 +123,38 @@ $body-bg: steelblue;
     display: none;
     text-align: left; 
   }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-300%) rotate(0deg);;
+    }
+    100% {
+      transform: translateY(0) rotate(20deg);;
+    }
+  }
+  @keyframes rotateFullRight {
+    0% {
+      transform: rotate(0deg);;
+    }
+    100% {
+      transform: rotate(360deg);;
+    }
+  }
+  

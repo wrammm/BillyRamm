@@ -7,8 +7,8 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -23,12 +23,15 @@
                     <h3 class="mb-4">Full-stack developer with a focus on front-end design and functionality</h3>
                     <div>
                         <p>billy.ramm@yahoo.com</p>
-                            <div>
+                            <div id="icons">
                                 <a href="https://www.facebook.com/billy.ramm.5" target="_blank">
-                                    <img style="width:50px" src="./assets/fbIcon.png" alt="Facebook">
+                                    <img id="fbIcon" src="./assets/fbIcon.png" alt="Facebook">
                                 </a>
                                 <a href="https://www.linkedin.com/in/billy-ramm-0bb4ab179/" target="_blank">
-                                    <img style="width:60px" src="./assets/linkedIn.svg" alt="linkedIn">
+                                    <img id="linkedInIcon" src="./assets/linkedIn.svg" alt="linkedIn">
+                                </a>
+                                <a href="https://github.com/wrammm/" target="_blank">
+                                    <img id="githubIcon" src="./assets/githubIcon.png" alt="github">
                                 </a>
                             </div>
                         </div>
@@ -40,17 +43,17 @@
                 </div>
             
             </div>
-            <div class="row row-flex">
-                <div class="col-sm-12 mb-4 col-md-4" >
+            <div id="firstRow" class="row row-flex">
+                <div class="col-sm-12 mb-4 col-lg-4" >
                     <div class="card" style="height:100%">
                         <div class="card-body text-center">
                             <h5 class="card-title">About Billy</h5>
                             <img style="width:100%; border-radius: 20px; margin-bottom: 10px;" src="./assets/me1.jpg">
-                            <p class="card-text">When Billy Ramm is not hiking around the outdoors or lifting weights at the gym, you can find him reading up on the latest information technologies and writing code. He is a highly motivated individual who is driven by the work he does. In the Summer of 2019, he strategically took his final credit hours before earning his Bachler’s in IT Innovation with a minor in Computer Science as a part of a study abroad in Germany that shadowed German IT companies. Leaving the University of Omaha at Nebraska with a GPA of 3.98 and having earned the 2019 Undergraduate Major Award for IT Innovation, and venturing away from his developer internship at Union Pacific, he is currently seeking employment as an Application Developer. His experience includes working with HTML, CSS/SCSS, jQuery, JavaScript/TypeScript, Angular 2+, Java, C, Spring Boot, MyBatis, SQL, Python, Node.js, MongoDB, Express, Django, Heroku, and Firebase. Planning on staying around Omaha, Nebraska, he wishes to continue developing solutions through high-quality applications.</p>
+                            <p class="card-text" id="about">When Billy Ramm is not hiking around the outdoors or lifting weights at the gym, you can find him reading up on the latest information technologies and writing code. He is a highly motivated individual who is driven by the work he does. In the Summer of 2019, he strategically took his final credit hours before earning his Bachler’s in IT Innovation with a minor in Computer Science as a part of a study abroad in Germany that shadowed German IT companies. Leaving the University of Omaha at Nebraska with a GPA of 3.98 and having earned the 2019 Undergraduate Major Award for IT Innovation, and venturing away from his developer internship at Union Pacific, he is currently seeking employment as an Application Developer. His experience includes working with HTML, CSS/SCSS, jQuery, JavaScript/TypeScript, Angular 2+, Java, C, Spring Boot, MyBatis, SQL, Python, Node.js, MongoDB, Express, Django, Heroku, and Firebase. Planning on staying around Omaha, Nebraska, he wishes to continue developing solutions through high-quality applications.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 mb-4 col-md-8">
+                <div class="col-sm-12 mb-4 col-lg-8">
                     <div class="card">
                         <div class="card-body text-center">
                             <h5 class="card-title">Projects</h5>
@@ -127,7 +130,7 @@ This was a personal project of mine that waterfalled into fruition after I stumb
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div id="secondRow" class="row">
                     <div class="col-sm-12 col-md-12">
                         <div class="card">
                             <div class="card-body text-center">
@@ -167,43 +170,6 @@ This was a personal project of mine that waterfalled into fruition after I stumb
                 </div>
             </div>
         </div>
-        <script>
-		document.getElementById("pills-one").addEventListener("click", pillsOneClick);
-		document.getElementById("pills-two").addEventListener("click", pillsTwoClick);
-		document.getElementById("pills-three").addEventListener("click", pillsThreeClick);
-		function pillsOneClick() {
-  		document.getElementById("pills-one").style.backgroundColor = 'steelblue';
-  		document.getElementById("pills-one").style.color = 'white';
-  		document.getElementById("pills-two").style.backgroundColor = 'white';
-  		document.getElementById("pills-two").style.color = 'steelblue';
-  		document.getElementById("pills-three").style.backgroundColor = 'white';
-  		document.getElementById("pills-three").style.color = 'steelblue';
-  		document.getElementById("sectionOne").style.display = 'inline';
-  		document.getElementById("sectionTwo").style.display = 'none';
-  		document.getElementById("sectionThree").style.display = 'none';
-		}
-		function pillsTwoClick() {
-  		document.getElementById("pills-two").style.backgroundColor = 'steelblue';
-  		document.getElementById("pills-two").style.color = 'white';
-  		document.getElementById("pills-one").style.backgroundColor = 'white';
-  		document.getElementById("pills-one").style.color = 'steelblue';
-  		document.getElementById("pills-three").style.backgroundColor = 'white';
-  		document.getElementById("pills-three").style.color = 'steelblue';
-  		document.getElementById("sectionTwo").style.display = 'inline';
-  		document.getElementById("sectionOne").style.display = 'none';
-  		document.getElementById("sectionThree").style.display = 'none';
-		}
-		function pillsThreeClick() {
-  		document.getElementById("pills-three").style.backgroundColor = 'steelblue';
-  		document.getElementById("pills-three").style.color = 'white';
-  		document.getElementById("pills-two").style.backgroundColor = 'white';
- 	        document.getElementById("pills-two").style.color = 'steelblue';
-  		document.getElementById("pills-one").style.backgroundColor = 'white';
-  		document.getElementById("pills-one").style.color = 'steelblue';
-  		document.getElementById("sectionThree").style.display = 'inline';
-  		document.getElementById("sectionOne").style.display = 'none';
-  		document.getElementById("sectionTwo").style.display = 'none';
-		}
-	</script>
+        <script src="..\js\index.js"></script>
     </body>
 </html>
