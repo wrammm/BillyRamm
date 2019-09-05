@@ -7118,6 +7118,11 @@ p, li {
   display: none;
   text-align: left; }
 
+@media (max-width: 480px) {
+  .nav-link {
+    padding: 8px;
+    font-size: small; } }
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%); }
