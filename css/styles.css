@@ -465,7 +465,8 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -473,7 +474,8 @@ pre {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px; }
+  margin-left: -15px; 
+  padding-bottom: 15px !important;}
 
 .no-gutters {
   margin-right: 0;
@@ -7023,7 +7025,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .jumbotron {
   background-color: #ffffff !important;
-  border-top: 3px solid #dbdbdb;
   animation-delay: -2s;
   animation: 1.5s ease-out 0s 1 slideInFromRight;
   transition-timing-function: cubic-bezier(0, 0.9, 1, 0.58); }
@@ -7052,7 +7053,11 @@ a.text-dark:hover, a.text-dark:focus {
 p, li {
   font-family: 'Work Sans', sans-serif; }
 
+.quote--author {
+  color: white; }
+
 .quote {
+  color: white;
   position: relative;
   letter-spacing: .03em;
   margin-bottom: .5rem;
@@ -7146,3 +7151,14 @@ p, li {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.jumbotron {
+  width: 100%;
+  background-color: black !important;
+  background-image: url(../assets/stars3.jpg);
+  background-repeat: repeat-x;
+  animation: 50s para infinite linear; }
+
+@keyframes para {
+  100% {
+    background-position: -5000px 20%; } }
