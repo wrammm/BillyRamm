@@ -12,28 +12,38 @@ $body-bg: steelblue;
 //Google Fonts Imports
 @import url('https://fonts.googleapis.com/css?family=Blinker|Luckiest+Guy|Patua+One|Righteous|Open+Sans:600|Work+Sans:500|Ultra&display=swap');
 
-.jumbotron {
-    background-color: #ffffff !important;
-    border-top: 3px solid rgb(219, 219, 219);
+#briefAbout h1{
     animation-delay: -2s;
-    animation: 1.5s ease-out 0s 1 slideInFromRight;
+    animation: 1.3s ease-out 0s 1 slideInFromRight;
     transition-timing-function: cubic-bezier(0, 0.9, 1, 0.58);
+}
+
+#briefAbout h3{
+  animation-delay: -2s;
+  animation: 1.5s ease-out 0s 1 slideInFromRight;
+  transition-timing-function: cubic-bezier(0, 0.9, 1, 0.58);
+}
+
+#contact{
+  animation-delay: -2s;
+  animation: 1.7s ease-out 0s 1 slideInFromRight;
+  transition-timing-function: cubic-bezier(0, 0.9, 1, 0.58);
 }
 
 #fbIcon{
   width:50px;
   animation: 1s ease-out 0s 1 rotateFullRight;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 #linkedInIcon{
   width:60px;
   animation: 1s ease-out 0s 1 rotateFullRight;
-  animation-delay: 1.7s;
+  animation-delay: 2.2s;
 }
 #githubIcon{
   width:55px;
   animation: 1s ease-out 0s 1 rotateFullRight;
-  animation-delay: 1.9s;
+  animation-delay: 2.4s;
 }
 
 #about{
@@ -47,7 +57,12 @@ p, li{
   font-family: 'Work Sans', sans-serif;
 }
 
+.quote--author{
+  color:white;
+}
+
 .quote {
+    color:white;
     position: relative;
     letter-spacing: .03em;
     margin-bottom: .5rem;
@@ -130,7 +145,7 @@ p, li{
       font-size: small;
     }
   }
-
+  
   @keyframes slideInFromLeft {
     0% {
       transform: translateX(-100%);
@@ -164,4 +179,19 @@ p, li{
       transform: rotate(360deg);;
     }
   }
-  
+
+
+  .jumbotron {
+    width: 100%;
+    background-color: black !important;
+    background-image:  url(../assets/stars3.jpg);
+    background-repeat: repeat-x;
+    animation: 50s para infinite linear;
+    }
+
+@keyframes para {
+    100% {
+        background-position: 
+            -5000px 20%;
+        }
+    }
