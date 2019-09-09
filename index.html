@@ -52,12 +52,16 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">About Billy</h5>
                             <img style="width:100%; border-radius: 20px; margin-bottom: 10px;" src="./assets/me1.jpg">
-                            <p id="about" class="card-text" id="about">When Billy Ramm is not hiking around the outdoors or lifting weights at the gym, you can find him reading up on the latest information technologies and writing code. He is a highly motivated individual who is driven by the work he does. In the Summer of 2019, he strategically took his final credit hours before earning his Bachler’s in IT Innovation with a minor in Computer Science as a part of a study abroad in Germany that shadowed German IT companies. Leaving the University of Omaha at Nebraska with a GPA of 3.98 and having earned the 2019 Undergraduate Major Award for IT Innovation, and venturing away from his developer internship at Union Pacific, he is currently seeking employment as an Application Developer. His experience includes working with HTML, CSS/SCSS, jQuery, JavaScript/TypeScript, Angular 2+, Java, C, Spring Boot, MyBatis, SQL, Python, Node.js, MongoDB, Express, Django, Heroku, and Firebase. Planning on staying around Omaha, Nebraska, he wishes to continue developing solutions through high-quality applications.</p>
+                            <p id="about" class="card-text" id="about">
+                                When Billy Ramm is not hiking around the outdoors or lifting weights at the gym, you can find him reading up on the latest information technologies and writing code. He is a highly motivated individual who is driven by the work he does. In the Summer of 2019, he strategically took his final credit hours before earning his Bachler’s in IT Innovation (minor in Computer Science) as a part of a study abroad in Germany that shadowed German IT companies. Leaving the University of Omaha at Nebraska with a GPA of 3.98, earning the 2019 Undergraduate Major Award for IT Innovation, and venturing away from his developer internship at Union Pacific, he is currently seeking employment as an Application Developer. The bulk of his experience includes working with HTML, CSS/SCSS, JavaScript/TypeScript, Angular 2+, and Java but he has also worked with jQuery, C, Spring Boot, MyBatis, SQL, Python, Node.js, MongoDB, Express, Django, Heroku, and Firebase. Planning on staying around Omaha, Nebraska, he wishes to continue developing solutions through high-quality applications.
+                            </p>
+                            <a class="button" href="./assets/Transcript.pdf" target="_blank">Transcript</a>
+                            <a class="button" href="./assets/Resume.docx" target="_blank">Resume</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 mb-4 col-lg-8">
-                    <div class="card">
+                    <div class="card" id="projectsCard">
                         <div class="card-body text-center">
                             <h5 class="card-title">Projects</h5>
                             <ul class="nav nav-pills mb-3 justify-content-center" role="tablist" style="padding-bottom: 0px">
@@ -72,67 +76,75 @@
                               </li>
                             </ul>
                             <div id="sectionOne">
+                                <h3>Purpose</h3>
                                 <p>
                                     Spokes is a service for competitive cyclists which helps them set up and alter a training plan. The application includes extensive logic that follows coaching best practices which generates training plans for the user based on their specific training needs. Throughout each week of training the athlete can enter in each workout they complete (along with the time spent in each training zone). At the end of each week, the application acts as a ‘virtual coach,’ recommending feedback and gaining feedback from the user to enhance the quality of the training plan.    
                                 </p>
+                                <h3>Features</h3>
                                 <p>
-                                    Features include:
                                     <ul>
-                                        <li>Creating an account with Google</li>
-                                        <li>Ability to add, edit, or delete a workout</li>
-                                        <li>Ability to generate 15 different variations of a training plan based on a form the user fills out that goes into specifics on their training needs</li>
-                                        <li>Ability to view progress for each week</li>
-                                        <li>Ability to get feedback for completed weeks</li>
-                                        <li>Ability to get recommendations on upcoming weeks</li>
-                                        <li>Ability to input feedback which can guide you as to how you may want to alter your training plan</li>
-                                        <li>Timeline chart for FTP scores over time</li>
-                                        <li>Pie chart showing overall time spent in each zone </li>
+                                        <li>Login with Google Account</li>
+                                        <li>Add, edit, or delete a workout</li>
+                                        <li>Generate up to 15 different variations of a training plan based on training needs</li>
+                                        <li>View progress for each week</li>
+                                        <li>Get feedback for completed weeks</li>
+                                        <li>Get recommendations on upcoming weeks</li>
+                                        <li>Input feedback and recieve recommendations on how to alter your training plan</li>
+                                        <li>View timeline chart for FTP scores</li>
+                                        <li>View pie chart for overall time spent in each zone </li>
                                     </ul>
                                 </p>
+                                <h3>Motive</h3>
                                 <p>
-                                        This application was created as my IT Innovation capstone project. The largest competitive advantage this application has over other applications involves its ability to recommend changes to the user’s training plan based on how they feel and its ability to produce variations of a training plan based on the user’s needs. As of now, I have paused development on this app, but hope to resume it or a variation of it in the future.
+                                        This application was created for Billy’s IT Innovation capstone project. The largest competitive advantage this application has over other applications involves its ability to recommend changes to the user’s training plan based on how they feel and its ability to produce variations of a training plan based on the user’s needs. As of now, he has paused development on this app, but hopes to resume it or a variation of it in the future.
                                 </p>
-                                <p>
-                                        Below is a demo of some of the app’s features.
-                                </p>
+                                <h3>Demo</h3>
                                 <video controls width="100%" height="100%">
                                         <source src="./assets/SpokesDemo.mp4" type="video/webm">
                                         Sorry, your browser doesn't support embedded videos.
-                                    </video>  
+                                </video> 
+                                <a class="nav-link" href="#projectsCard" id="pills-one-link" >Next Project: Wayside Monitor</a>
                             </div>
                             <div id="sectionTwo">
+                                <h3>Backstory</h3>
                                 <p>
-                                    This is a project I had the pleasure of working on for a year and 4 months as an intern at Union Pacific. I was tasked to migrate one of their old applications that relied on Flash (which will no longer be supported at the end of 2020) to an Angular application.    
+                                    This is a project Billy had the pleasure of working on for a year and 4 months as an intern at Union Pacific. He was tasked to migrate one of their old applications that relied on Flash (which will no longer be supported at the end of 2020) to an Angular application.    
                                 </p>
+                                <h3>Purpose</h3>
                                 <p>
                                     The purpose of this application is to help UP desk employees make decisions on what to do with the data that comes from detectors on the railroad tracks. These detectors include hot box detectors which measure the temperature of the axles and wheels, weight detectors which detect the weight of the wheels, and wheel profile detectors which use ultrasound technology to get the shape of the wheels. Once the data has been generated from a train passing, it will go through a prediction analysis tool which may then throw an “alert” if something seems like an outlier (e.g. a bearing is significantly hotter than the other ones on the train, the weight of a car is much higher on one side, etc.). Once an alert is produced, it will then appear in the table in the application which is constantly updating new alerts. It is then up to the UP desk employees to decide what action should be taken (e.g. set out train at next stop, repair cracked wheel, etc.) based on the alert. To help them decide, the application has many useful features allowing them to get extensive visualizations of the temperatures/weights on the train/car/axles as well as allowing them to see extensive history on the bearing/wheel temperatures and the average weight values produced by the detectors.
                                 </p>
+                                <h3>Motive</h3>
                                 <p>
                                     With the help of this application, UP can better predict when something is wrong on a train and fix it before it causes costly repairs or even train derailments.
                                 </p>
+                                <h3>Implementation</h3>
                                 <p>
-                                    The video bellow will showcase some of the features I created. Aside from using Angular 2+, this required me to work extensively with HTML Canvas Elements (for drawing the train views and the equipment views), Chart.js (for creating the line charts), and Angular Material (for the UI components). 
+                                    The video bellow will showcase some of the features he created. Aside from using Angular 2+, this required him to work extensively with HTML Canvas Elements (for drawing the train views and the equipment views), Chart.js (for creating the line charts), and Angular Material (for the UI components). 
                                 </p>
+                                <h3>Demo</h3>
                                 <video controls width="100%">
                                         <source src="./assets/Wayside Monitor.mp4" type="video/mp4">
                                         Sorry, your browser doesn't support embedded videos.
-                                    </video>        
+                                    </video>   
+                                    <a class="nav-link" href="#projectsCard" id="pills-two-link" >Next Project: Trivia</a>     
                             </div>
                             <div id="sectionThree">
+                                <h3>Bill's Trivia Pursuit</h3>
                                 <p>
-This was a personal project of mine that waterfalled into fruition after I stumbled upon <a href="https://opentdb.com" target="_blank">Open Trivia Database API</a>. Together with my love for trivia and my knowledge of Angular, I went to work, first creating a simple single-player version of the game. This was cool, but I thought it needed a more competitive aspect, which is why I then created a two-player version. This web application works both on desktop and mobile. The single player version is pretty basic where you see how many questions out of 10 you can get correct. The two-player version is a bit more complex, involving time limits, buzzers for each person, random player selections after the time limit is up, and randomly generated point values for each question. Bellow is a video demo of the application, but feel free to check it out yourself with this <a href="https://billstriviapursuit.firebaseapp.com/" target="_blank">link</a>.
+                                    This was a personal project for Billy that came into fruition after he stumbled upon <a href="https://opentdb.com" target="_blank">Open Trivia Database API</a>. Together with his love for trivia and knowledge of Angular, he went to work, first creating a simple single-player version of the game. After the thought arose that it it needed a more competitive aspect, he then created a two-player version. This web application works both on desktop and mobile. The single player version is pretty basic where you see how many questions out of 10 you can get correct. The two-player version is a bit more complex, involving time limits, buzzers for each person, random player selections after the time limit is up, and randomly generated point values for each question. Feel free to check it out yourself with this <a href="https://billstriviapursuit.firebaseapp.com/" target="_blank">link</a>.
                                 </p>
+                                <h3>Demo</h3>
                                 <video controls width="100%" height="100%">
                                     <source src="./assets/BillsTriviaPursuitDemo2.mp4" type="video/mp4">
                                     Sorry, your browser doesn't support embedded videos.
-                                </video>  
+                                </video> 
+                                <a class="nav-link" href="#projectsCard" id="pills-three-link" >Next Project: Spokes</a> 
                             </div>
-                        </div>
-                        
-
                         </div>
                     </div>
                 </div>
+            </div>
                 <div id="secondRow" class="row">
                     <div class="col-sm-12 col-md-12">
                         <div class="card">
@@ -178,8 +190,13 @@ This was a personal project of mine that waterfalled into fruition after I stumb
             document.getElementById("pills-one").addEventListener("click", pillsOneClick);
             document.getElementById("pills-two").addEventListener("click", pillsTwoClick);
             document.getElementById("pills-three").addEventListener("click", pillsThreeClick);
+            
+            document.getElementById("pills-one-link").addEventListener("click", pillsTwoClick);
+            document.getElementById("pills-two-link").addEventListener("click", pillsThreeClick);
+            document.getElementById("pills-three-link").addEventListener("click", pillsOneClick);
 
             function pillsOneClick() {
+            console.log('made it i the pills');
               document.getElementById("pills-one").style.backgroundColor = 'steelblue';
               document.getElementById("pills-one").style.color = 'white';
               document.getElementById("pills-two").style.backgroundColor = 'white';

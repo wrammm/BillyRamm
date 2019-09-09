@@ -7022,6 +7022,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+html {
+  scroll-behavior: smooth; }
+
 #briefAbout h1 {
   animation-delay: -2s;
   animation: 1.3s ease-out 0s 1 slideInFromRight;
@@ -7063,6 +7066,22 @@ p, li {
 
 .quote--author {
   color: white; }
+
+#pills-one-link, #pills-two-link, #pills-three-link {
+  text-align: center; }
+
+.button {
+  background-color: steelblue;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
 
 .quote {
   color: white;
