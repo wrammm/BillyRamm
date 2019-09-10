@@ -70,17 +70,17 @@ p, li{
 }
 
 .button {
-  background-color: steelblue; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
+  background-color: white;
+  border: 1px solid steelblue;
+  color:steelblue;
+  padding: 20px 34px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
-}
+  }
 
 .quote {
     color:white;
@@ -162,7 +162,7 @@ p, li{
 
   @media (max-width: 480px) {
     .nav-link{
-      padding:8px;
+      padding:10px;
       font-size: small;
     }
   }
