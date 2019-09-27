@@ -7119,6 +7119,11 @@ p, li {
   bottom: 0;
   width: 100%; }
 
+.material-icons {
+  font-size: 33px;
+  float: left;
+  margin-right: 5px; }
+
 .row-flex {
   display: flex;
   flex-wrap: wrap; }
