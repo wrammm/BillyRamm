@@ -85,6 +85,9 @@
                               <li class="nav-item">
                                 <a class="nav-link" id="pills-three" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Trivia</a>
                               </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="pills-four" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Choose Already</a>
+                              </li>
                             </ul>
                             <div id="sectionOne">
                                 <i class="material-icons">directions_bike</i>
@@ -153,7 +156,17 @@
                                     <source src="./assets/BillsTriviaPursuitDemo2.mp4" type="video/mp4">
                                     Sorry, your browser doesn't support embedded videos.
                                 </video> 
-                                <a class="nav-link" href="#projectsCard" id="pills-three-link" >Next Project: Spokes</a> 
+                                <a class="nav-link" href="#projectsCard" id="pills-three-link" >Next Project: Choose Already</a> 
+                            </div>
+                            <div id="sectionFour">
+                                <i class="material-icons">live_help</i>
+                                <h3>Choose Already</h3>
+                                <p>
+                                    This was a quick, personal project for Billy with the purpose of helping people make random, spontaneous decisions. First, the user enters all of their choices they are debating. Then the app will randomize the order of the choices and hide them behind windows. Finally, the user will choose a window to reveal a choice. Feel free to check it out yourself with this <a href="https://choosealready.firebaseapp.com/" target="_blank">link</a>.
+                                </p>
+                                <h3>Demo</h3>
+                                <img id="chooseAlreadyDemo" src="./assets/chooseAlreadyDemo.gif" alt="Choose Already Demo">
+                                <a class="nav-link" href="#projectsCard" id="pills-four-link" >Next Project: Spokes</a> 
                             </div>
                         </div>
                     </div>
@@ -215,23 +228,27 @@
             document.getElementById("pills-one").addEventListener("click", pillsOneClick);
             document.getElementById("pills-two").addEventListener("click", pillsTwoClick);
             document.getElementById("pills-three").addEventListener("click", pillsThreeClick);
+            document.getElementById("pills-four").addEventListener("click", pillsFourClick);
             
             document.getElementById("pills-one-link").addEventListener("click", pillsTwoClick);
             document.getElementById("pills-two-link").addEventListener("click", pillsThreeClick);
             document.getElementById("pills-three-link").addEventListener("click", pillsOneClick);
+            document.getElementById("pills-four-link").addEventListener("click", pillsFourClick);
 
             function pillsOneClick() {
-            console.log('made it i the pills');
               document.getElementById("pills-one").style.backgroundColor = 'steelblue';
               document.getElementById("pills-one").style.color = 'white';
               document.getElementById("pills-two").style.backgroundColor = 'white';
               document.getElementById("pills-two").style.color = 'steelblue';
               document.getElementById("pills-three").style.backgroundColor = 'white';
               document.getElementById("pills-three").style.color = 'steelblue';
+              document.getElementById("pills-four").style.backgroundColor = 'white';
+              document.getElementById("pills-four").style.color = 'steelblue';
             
               document.getElementById("sectionOne").style.display = 'inline';
               document.getElementById("sectionTwo").style.display = 'none';
               document.getElementById("sectionThree").style.display = 'none';
+              document.getElementById("sectionFour").style.display = 'none';
             }
             function pillsTwoClick() {
               document.getElementById("pills-two").style.backgroundColor = 'steelblue';
@@ -240,10 +257,13 @@
               document.getElementById("pills-one").style.color = 'steelblue';
               document.getElementById("pills-three").style.backgroundColor = 'white';
               document.getElementById("pills-three").style.color = 'steelblue';
+              document.getElementById("pills-four").style.backgroundColor = 'white';
+              document.getElementById("pills-four").style.color = 'steelblue';
             
               document.getElementById("sectionTwo").style.display = 'inline';
               document.getElementById("sectionOne").style.display = 'none';
               document.getElementById("sectionThree").style.display = 'none';
+              document.getElementById("sectionFour").style.display = 'none';
             }
             function pillsThreeClick() {
               document.getElementById("pills-three").style.backgroundColor = 'steelblue';
@@ -252,10 +272,28 @@
               document.getElementById("pills-two").style.color = 'steelblue';
               document.getElementById("pills-one").style.backgroundColor = 'white';
               document.getElementById("pills-one").style.color = 'steelblue';
+              document.getElementById("pills-four").style.backgroundColor = 'white';
+              document.getElementById("pills-four").style.color = 'steelblue';
             
               document.getElementById("sectionThree").style.display = 'inline';
               document.getElementById("sectionOne").style.display = 'none';
               document.getElementById("sectionTwo").style.display = 'none';
+              document.getElementById("sectionFour").style.display = 'none';
+            }
+            function pillsFourClick() {
+              document.getElementById("pills-three").style.backgroundColor = 'white';
+              document.getElementById("pills-three").style.color = 'steelblue';
+              document.getElementById("pills-two").style.backgroundColor = 'white';
+              document.getElementById("pills-two").style.color = 'steelblue';
+              document.getElementById("pills-one").style.backgroundColor = 'white';
+              document.getElementById("pills-one").style.color = 'steelblue';
+              document.getElementById("pills-four").style.backgroundColor = 'steelblue';
+              document.getElementById("pills-four").style.color = 'white';
+            
+              document.getElementById("sectionThree").style.display = 'none';
+              document.getElementById("sectionOne").style.display = 'none';
+              document.getElementById("sectionTwo").style.display = 'none';
+              document.getElementById("sectionFour").style.display = 'inline';
             }
         </script>
     </body>

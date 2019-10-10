@@ -65,7 +65,7 @@ p, li{
   color:white;
 }
 
-#pills-one-link, #pills-two-link, #pills-three-link{
+#pills-one-link, #pills-two-link, #pills-three-link, #pills-four-link{
   text-align: center;
 }
 
@@ -151,6 +151,10 @@ p, li{
     background-color: white;
     color: steelblue;
   }
+  #pills-four{
+    background-color: white;
+    color: steelblue;
+  }
   #sectionOne {
     height: 100%; 
     text-align: left; 
@@ -165,11 +169,22 @@ p, li{
     display: none;
     text-align: left; 
   }
+  #sectionFour {
+    height: 100%; 
+    display: none;
+    text-align: left; 
+  }
 
   @media (max-width: 480px) {
     .nav-link{
       padding:10px;
       font-size: small;
+    }
+  }
+
+  @media (max-width: 700px) {
+    #chooseAlreadyDemo{
+      width: 100%;
     }
   }
   
